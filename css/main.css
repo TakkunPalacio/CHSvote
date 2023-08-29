@@ -1,0 +1,209 @@
+
+/*colors used
+#F0F0F4 light grey
+#122246 dark blue
+#fff white
+#003eaa light blue highlight
+#0060df ligther blue current highlight
+#5B5B66 border color and text color
+#3076b2 button text color
+
+#0c4b05 green
+#149B08 hover green
+*/
+@media print
+{    
+    .no-print
+    {
+        display: none !important;
+    }
+}
+:root {
+    --menu-bg:#0c4b05;
+    --cur-hover:#149B08;
+    --menu-hover:#0c5f05;
+    --content-border:rgba(230, 198, 19, 0.925);
+}
+
+body{
+    background: #FFFBFE;
+    font-family: noto sans,sans-serif;
+}
+.menu {
+    display: inline-block;
+    height: inherit;
+    padding: 0;
+    margin: 0;
+    width:14%;
+    background:#0c4b05;
+    text-align: center;
+}
+.main_content{
+    display: inline-block;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    height: inherit;
+    width:85.5%;
+    overflow-y: auto;
+}
+.footer {
+    display: flex;
+    min-height: 10vh;
+    flex-direction: column;
+    background-color: #0c4b05;
+    margin-top: auto;
+}
+.container{
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    border:0;
+    
+}
+.menubtn{
+    width: 100%;
+    border-radius: 0;
+    height:10%;
+    font-family: inherit;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700 !important;
+    text-decoration: none;
+    transition: background-color 150ms ease;
+    background: #0c4b05;
+    border: 0;
+    text-align: center;
+    word-break: break-all;
+}
+.menubtn:hover{
+    background: #0c5f05;
+}
+.current{
+    color:#fff;
+    background: #149B08;
+    cursor:default;
+}
+.current:hover{
+    background: #149B08;
+}
+.content {
+    font-family: inherit;
+    color:#5B5B66;
+    position: relative;
+    display: block;
+    text-align: justify;
+    top:15%;
+    left:5%;
+    width: 86%;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    border-color:  rgba(230, 198, 19, 0.925);
+    background-color: #fff;    
+    padding: 12px;
+    
+}
+.profile{
+    font-family: inherit;
+}
+.ED_btn{
+    text-align: center;
+    
+}
+.M_acc{
+    border-radius: 2px;
+    color: #0c4b05;
+    cursor: pointer;
+    font-family: noto sans,sans-serif;
+    font-weight: 700 !important;
+    padding: 12px;
+    text-decoration: none;
+    transition: background-color 150ms ease;
+    user-select: none;
+    background: #fff;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #0c4b05;
+    margin: 10px 0;
+    line-height: 1;
+    width: 40%;
+}
+.M_acc:hover{
+    background-color: #0c4b05;
+    color:#fff;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 110;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content{
+    margin: auto;
+    border-radius: 3px;
+    display: block;
+    width: fit-content;
+    width: 200px;
+    min-width: 400px;
+    max-width: 900px;
+    white-space: unset;
+    padding: 24px;
+    max-height: 450px;
+    overflow-y: auto;
+    background-color: #fefefe;
+    scrollbar-width: none;
+}
+.modal-content::-webkit-scrollbar{
+    display: none;
+}
+.modal-title {
+    text-align: center;
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    
+}
+.remove {
+    color: #da6262;
+    font-size: 25px;
+    font-weight: 700;
+    cursor: pointer;
+    float: right;
+    margin: -25px -18px 0 0;
+}
+.fa {
+    display: inline-block;
+    font: inherit;
+    font-size: 14px;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.fa-circle::before{
+    content:\f057;
+}
+
+.mmsulogo img{
+    opacity: 0.75;
+    aspect-ratio: 1/1;
+    width: 11vw;
+    height: 25vh;
+}
+p#modal-text {
+    text-align: center;
+
+}

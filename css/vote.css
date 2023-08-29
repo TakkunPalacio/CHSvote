@@ -1,0 +1,55 @@
+input[type="radio"]{
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+[type=radio] + img {
+    cursor: pointer;
+}
+.profile-icon {
+    cursor: pointer;
+}
+/* edit these values to change how the selected option looks*/
+input[type="radio"]:checked+.profile-icon{
+     opacity: .6;
+     mix-blend-mode: saturation;
+     }
+
+input[type="radio"]:checked+.profile-icon+.secondary-info+.candidate-name{
+    background:#0c4b05;
+}
+
+input[type="radio"]:checked+.profile-icon+.secondary-info .short-info+.explore-more{
+    background:#0c4b05;
+}
+
+input[type="radio"]:checked+.profile-icon+.secondary-info+.candidate-name{
+    color:white
+}
+
+input[type="text"]{
+    border:none;
+    width: 500px;
+}
+input[type="text"]:disabled{
+    font-size: 18px;
+    color:#000;
+}
+
+.content form #modalForm.modal.form_veri .modal-content .expl-con .modal-text-form{
+    color:black !important;
+}
+header{
+    font-size: 18px;
+    color: #000;
+}
+.send {
+    height: 100px;
+}
+#confirm-modal{
+    display: none;
+}
+.more-info.confirm {
+    height: 50px;
+}

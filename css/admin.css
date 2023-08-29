@@ -1,0 +1,264 @@
+
+@media print
+{    
+    .no-print
+    {
+        display: none !important;
+    }
+    .pagebreak { page-break-before: auto; }
+    table{border: 1px solid #000;
+        border-collapse: collapse;}
+    .main_content {
+        width: 100% !important;
+        height: 100% !important;
+        max-height: 100% !important;    
+        display: block !important;    
+        position: absolute;    
+        overflow: visible !important;   
+        page-break-after: always;
+    }
+    .content{
+        border: none;
+        display: block !important;        
+        overflow: none !important;   
+        page-break-after: always;
+    }
+    td{
+        height: 10px;
+    }
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 17px;
+}
+th{
+    column-width: 12.5%;
+    color:#000;
+}
+tr{
+    max-height: 80px;
+}
+img{
+    height: 80px;
+    width: 80px;
+}
+td.platform{
+    max-width: 100px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+td{
+    text-align: center;
+    color: #000;
+}
+td.buttons{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    width: 138px;
+}
+button{
+    font-weight: 700 !important;
+    height:40px ;
+    padding: 12px;
+    text-decoration: none;
+    transition: background-color 150ms ease ;
+    background-color:#ffffff00;
+    border: 0;
+    cursor: pointer;
+    width: fit-content;
+    user-select: none;
+}
+button.delete{
+    background-color: #ff283a;
+    color: #fff;
+    border-radius: 5px;
+}
+.add{
+    color:#0c4b05;
+    background-color: #fff;
+    border:1px solid #0c4b05;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 2px;
+    width: 100%;
+}
+.add.form{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    width: 100%;
+}
+.add:hover{
+    background-color: #0c4b05;
+    color:#fff;
+}
+button.delete:hover{
+    background-color: #ff626f;
+}
+.edit{
+    background-color: #ff994f;
+    color: #fff;
+    border-radius: 5px;
+}
+.edit:hover{
+    background-color: #ffb056;
+}
+tr:nth-child(2n){
+    background-color: rgb(218, 218, 218);
+}
+table,tr,td,th{
+    border: 1px solid black;
+    
+}
+td{
+    height: 50px;
+}
+.modal{
+    display:none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+
+  /* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}  
+form{
+    padding: 25px 30px;
+
+}
+form .error-text{
+    color: #721c24;
+    padding: 8px 10px;
+    text-align: center;
+    border-radius: 5px;
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+    margin-bottom: 10px;
+    display: none;
+}
+form .input-small {
+    box-sizing: border-box;
+    display: flex;
+    flex: 1 1 auto;
+    width: 100px;
+    margin:2px;
+}
+form .input-small input,form .input-small select{
+    width: 300px;
+    margin-right: 10px;
+}
+form .input-small select{
+    background-color: #fff;
+    border: 1px solid grey;
+    border-radius: 2px;
+}
+form .input-platform p{
+    padding: 0;
+    margin: 0;
+}
+form .input-platform textarea{
+    width: 100%;
+    height: 200px;
+    font-size: 17px;
+}
+form .form-button input{
+    font-weight: 700 !important;
+    height:40px ;
+    padding: 12px;
+    text-decoration: none;
+    transition: background-color 150ms ease ;
+    background-color:#ffffff00;
+    border: 1px solid ;
+    cursor: pointer;
+    width: 100%;
+    user-select: none;
+}
+form .form-button input.edit{
+    background-color: #F77D24;
+    color: #fff;
+}
+form .form-button input.edit:hover{
+    background-color: #ff9f32;
+}
+
+.import {
+    width: 360px;
+    padding-right: 10px;
+}
+.instruction{
+    padding: 30;
+}
+.import-div{
+    display: flex;
+}
+.excel-img {
+    width: auto;
+    max-width: 728px;
+    height: auto;
+}
+.error-text{
+    color: #721c24;
+    padding: 8px 10px;
+    text-align: center;
+    border-radius: 5px;
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+    margin-bottom: 10px;
+    display: none;
+}
+.success-text{
+    color: #0c4b05;
+    padding: 8px 10px;
+    text-align: center;
+    border-radius: 5px;
+    background: #daf8d7;
+    border: 1px solid #cff5c6;
+    margin-bottom: 10px;
+    display: none;
+}
+.process-text{
+    color: #4b4605;
+    padding: 8px 10px;
+    text-align: center;
+    border-radius: 5px;
+    background: #f8f6d7;
+    border: 1px solid #f5f2c6;
+    margin-bottom: 10px;
+    display: none;
+}
+.search form{
+    color: #000;
+}
+#delete{
+    text-align: center;
+    margin-left: 60vh;
+    display: none;
+}
