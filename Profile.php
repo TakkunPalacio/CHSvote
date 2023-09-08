@@ -21,7 +21,7 @@ if($_SESSION['is_admin']==1){
     <body>
         <div class="container">
             <div class="menu">
-                <div class="mmsulogo"><img src="assets/mmsu logo.png" alt=""></div>
+                <div class="mmsulogo"><img src="assets/Chs_logo.png" alt=""></div>
                 <button class="menubtn current" disabled>Profile</button><br>
                 <button class="menubtn" onclick="location.href='Candidate.php'">Vote</button><br>
                 <button class="menubtn" onclick="location.href='php/logout.php'">Logout</button>

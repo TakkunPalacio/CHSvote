@@ -11,10 +11,10 @@ input[type="radio"]{
     cursor: pointer;
 }
 /* edit these values to change how the selected option looks*/
-input[type="radio"]:checked+.profile-icon{
-     opacity: .6;
-     mix-blend-mode: saturation;
-     }
+/*input[type="radio"]:checked+.profile-icon{
+    border: 2px solid #0c4b05;
+     /* mix-blend-mode: saturation; 
+     }*/
 
 input[type="radio"]:checked+.profile-icon+.secondary-info+.candidate-name{
     background:#0c4b05;

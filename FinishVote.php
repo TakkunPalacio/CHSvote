@@ -102,10 +102,16 @@ function getimgdata($c_id){
                 text-align: center;
             }
             .mmsulogo img{
-                opacity: 0.75;
-                aspect-ratio: 1/1;
-                width: 11vw;
-                height: 25vh;
+
+                position: flex;
+                height: 154px;
+                width: 154px;
+                margin: 0;
+                max-width: 154px;
+                min-width: 98px;
+                border-top-right-radius: 4px;
+                border-top-left-radius: 4px;
+                border: 1px solid var(--menu-bg);
             }
         </style>
         <title>Finish</title>
@@ -113,7 +119,7 @@ function getimgdata($c_id){
     <body>
         <div class="container">
             <div class="menu">
-                <div class="mmsulogo"><img src="assets/mmsu logo.png" alt=""></div>
+                <div class="mmsulogo"><img src="assets/Chs_logo.png" alt=""></div>
                 <button class="menubtn" onclick="location.href='Profile.php'">Profile</button><br>
                 <button class="menubtn current" disabled onclick="location.href='Candidate.php'">Vote</button><br>
                 <button class="menubtn" onclick="location.href='php/logout.php'">Logout</button>
@@ -121,7 +127,7 @@ function getimgdata($c_id){
             <div class="main_content">
                 <!--Put all contents here please-->
                 <div class="content">
-                    Thank you for Voting. Please logout and let the next student partake in the vote.
+                    Thank you for voting. Please logout and let the next student vote.
                 </div><br>
                 <div class="content">
                 You have selected:<br><br>

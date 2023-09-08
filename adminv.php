@@ -45,7 +45,7 @@ $count = mysqli_num_rows($result);
                             <select id="coursesearch" name="course">
                                 <option value="">All</option>
                                 <option value="BSN">BSN</option>
-                                <option value="BSP">BSP</option>
+                                <option value="BSPh">BSPh</option>
                                 <option value="BSPT">BSPT</option>
                             </select>
                             <label>Year:</label>

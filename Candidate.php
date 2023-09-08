@@ -14,7 +14,7 @@ if($_SESSION['is_admin']==1){
     header("Location:adminc.php");
 }
 $representative_array = ['Nursing Rep','Pharma Rep','PT Rep'];
-$rep_array_check = ['BSN','BSP','BSPT'];
+$rep_array_check = ['BSN','BSPh','BSPT'];
 $index_course = array_search($_SESSION['Course'],$rep_array_check);
 unset($representative_array[$index_course]);
 
@@ -50,7 +50,7 @@ function is_pres($item){
     <body>
         <div class="container">
             <div class="menu">
-                <div class="mmsulogo"><img src="assets/mmsu logo.png" alt=""></div>
+                <div class="mmsulogo"><img src="assets/Chs_logo.png" alt=""></div>
                 <button class="menubtn" onclick="location.href='Profile.php'">Profile</button><br>
                 <button class="menubtn current" disabled onclick="location.href='Candidate.html'">Vote</button><br>
                 <button class="menubtn" onclick="location.href='php/logout.php'">Logout</button>
